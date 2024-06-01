@@ -11,8 +11,8 @@ const moment = require("moment");
 io.on("connection", async (socket) => {
   console.log("Socket Connection done: ", socket.id);
 
-  socket.on("click_button", () => {
-    console.log("button clicked");
+  socket.on("socket_health_check", () => {
+    console.log("socket_health_check");
   });
 
   const { liveRoom } = socket.handshake.query;
