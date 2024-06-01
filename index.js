@@ -102,7 +102,6 @@ app.get("/*", (req, res) => {
 
 mongoose.connect(
   `mongodb+srv://admin:3ftnRmpbR2n8gtv9@livepay.yjctbbj.mongodb.net/Live_pay`,
-  // `mongodb://mongo:27017/pay`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
