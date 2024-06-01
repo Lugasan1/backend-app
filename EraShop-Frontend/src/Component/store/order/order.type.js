@@ -1,9 +1,0 @@
-// GET_USER
-export const GET_ORDER = "GET_ORDER";
-
-// GET_ORDER_DETAIL
-export const GET_ORDER_DETAIL = "GET_ORDER_DETAIL";
-
-// UPDATE_ORDER
-
-export const UPDATE_ORDER = "UPDATE_ORDER";

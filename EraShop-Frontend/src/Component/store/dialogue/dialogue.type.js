@@ -1,5 +1,0 @@
-export const OPEN_DIALOGUE = "OPEN_DIALOGUE";
-export const CLOSE_DIALOGUE = "CLOSE_DIALOGUE";
-
-export const LOADER_OPEN ="LOADER_OPEN"
-export const CLOSE_LOADER ="CLOSE_LOADER"

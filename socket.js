@@ -11,6 +11,10 @@ const moment = require("moment");
 io.on("connection", async (socket) => {
   console.log("Socket Connection done: ", socket.id);
 
+  socket.on("click_button", () => {
+    console.log("button clicked");
+  });
+
   const { liveRoom } = socket.handshake.query;
   console.log("liveRoom", liveRoom);
 
@@ -260,8 +264,8 @@ io.on("connection", async (socket) => {
         existSellerLive.isLive
       );
 
-      seller.isLive = false;
-      await seller.save();
+      // seller.isLive = false;
+      // await seller.save();
 
       existSellerLive.isLive = false;
       await existSellerLive.save();
