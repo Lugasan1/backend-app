@@ -102,6 +102,7 @@ app.get("/*", (req, res) => {
 
 mongoose.connect(
   `mongodb+srv://admin:3ftnRmpbR2n8gtv9@livepay.yjctbbj.mongodb.net/Live_pay`,
+  // `mongodb://mongo:27017/pay`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -111,10 +112,10 @@ mongoose.connect(
 //socket io
 const http = require("http");
 const server = http.createServer(app);
-global.io = require("socket.io")({
-  server: server,
+
+global.io = require("socket.io")(server, {
   cors: {
-    origin: ["http://localhost:5000", "http://localhost:3000", config.baseURL],
+    origin: "*",
   },
 });
 
